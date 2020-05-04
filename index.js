@@ -19,8 +19,8 @@ class SortedList {
 
     let items = this.items;
     items.push(item)
-    items.sort();
-    this.length = items.length;
+    items.sort((a, b) => a - b);
+    this.length = items.length
   }
 
   load(pos) {
